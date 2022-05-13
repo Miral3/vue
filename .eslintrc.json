@@ -1,0 +1,26 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "plugin:vue/essential"
+    ],
+    "rules": {
+      "vue/html-closing-bracket-newline": ["error", {
+        "singleline": "never",
+        "multiline": "always"
+      }],
+      "vue/html-self-closing": ["error", {
+        "html": {
+          "void": "never",
+          "normal": "always",
+          "component": "always"
+        },
+        "svg": "always",
+        "math": "always"
+      }],
+      "vue/multi-word-component-names": ["error", {
+        "ignores": ['Hello']
+      }],
+      "semi": ["error", "never"],
+      "quotes": ["error", "single"]
+    }
+}
