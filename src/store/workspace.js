@@ -44,7 +44,7 @@ export default {
       })
       dispatch('findWorkspacePath')
       if (!workspaces.length) {
-        dispatch('createWorkspaces');
+        await dispatch('createWorkspaces')
       }
     },
     async readWorkspace({ commit }, payload) {
